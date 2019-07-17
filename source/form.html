@@ -17,80 +17,74 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="">
-    <section>
-      <h1>Оставьте свой отзыв</h1>
-      <p>Помогите нашим отелям стать лучше!
+  <main class="main-review">
+    <section class="review">
+      <h1 class="review-title">Оставьте свой отзыв</h1>
+      <p class="review-item">Помогите нашим отелям стать лучше!
         Оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
-      <form>
-
-        <fieldset>
-          <legend>Представьтесь:</legend>
-          <label for="user-name">Имя*:</label>
-          <input type="text" name="username" id="user-name" placeholder="Петр">
-          <label for="user-surname">Фамилия*:</label>
-          <input type="text" name="usersurname" id="user-surname" placeholder="Иванов">
-          <label for="user-patronymic">Отчество:</label>
-          <input type="text" name="userpatronymic" id="user-patronymic" placeholder="Александрович">
+      <form class="review-form">
+        <fieldset class="review-form__username username">
+          <legend class="username__legend">Представьтесь:</legend>
+          <label class="username__name" for="user-name">Имя*:</label>
+          <input class="username__inputname" type="text" name="username" id="user-name" placeholder="Петр">
+          <label class="username__surname" for="user-surname">Фамилия*:</label>
+          <input class="username__inputsurname" type="text" name="usersurname" id="user-surname" placeholder="Иванов">
+          <label class="username__patronymic" for="user-patronymic">Отчество:</label>
+          <input class="username__inputsurpatronymic" type="text" name="userpatronymic" id="user-patronymic" placeholder="Александрович">
         </fieldset>
-        <fieldset>
-          <legend>Контактная информация:</legend>
-          <label for="user-phone">Контактный телефон*:</label>
-          <input type="text" name="userphone" id="user-phone" placeholder="Введите телефон">
-          <label for="user-mail">Электронная почта*:</label>
-          <input type="text" name="usersmail" id="user-mail" placeholder="Введите e-mail">
-        </fieldset>
-
-        <fieldset>
-          <legend>Ваше общее впечатление:</legend>
-          <input type="radio" name="impression" id="positive" checked>
-          <label for="positive">Скорее положительное</label>
-          <input type="radio" name="impression" id="negative">
-          <label for="negative">Скорее негативное</label>
-          <input type="radio" name="impression" id="hardtoanswer">
-          <label for="hardtoanswer">Затрудняюсь ответить</label>
+        <fieldset class="review-form__contact contact">
+          <legend class="contact__legend">Контактная информация:</legend>
+          <label class="contact__phone" for="user-phone">Контактный телефон*:</label>
+          <input class="contact__inputphone" type="text" name="userphone" id="user-phone" placeholder="Введите телефон">
+          <label class="contact__mail" for="user-mail">Электронная почта*:</label>
+          <input class="contact__inputmail" type="text" name="usersmail" id="user-mail" placeholder="Введите e-mail">
         </fieldset>
 
-        <fieldset>
-          <legend>Посещенные достропримечательности:</legend>
-          <input type="checkbox" name="sights" id="bridge" checked>
-          <label for="bridge">Мост Дьявола</label>
-          <input type="checkbox" name="sights" id="mountain" checked>
-          <label for="mountain">Гора-Колокол</label>
-          <input type="checkbox" name="sights" id="park" checked>
-          <label for="park">Слайд-парк</label>
-          <input type="checkbox" name="sights" id="rocks">
-          <label for="rocks">Красные скалы</label>
+        <fieldset class="review-form__impression impression">
+          <legend class="impression__legend">Ваше общее впечатление:</legend>
+          <input class="impression__input" type="radio" name="impression" id="positive" checked>
+          <label class="impression__label" for="positive">Скорее положительное</label>
+          <input class="impression__input" type="radio" name="impression" id="negative">
+          <label class="impression__label" for="negative">Скорее негативное</label>
+          <input class="impression__input" type="radio" name="impression" id="hardtoanswer">
+          <label class="impression__label" for="hardtoanswer">Затрудняюсь ответить</label>
         </fieldset>
 
-        <fieldset>
-          <legend>Опишите свои эмоции:</legend>
-          <textarea rows="3" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+        <fieldset class="review-form__sights sights">
+          <legend class="sights__legend">Посещенные достропримечательности:</legend>
+          <input class="sights__input" type="checkbox" name="sights" id="bridge" checked>
+          <label class="sights__label" for="bridge">Мост Дьявола</label>
+          <input class="sights__input" type="checkbox" name="sights" id="mountain" checked>
+          <label class="sights__label" for="mountain">Гора-Колокол</label>
+          <input class="sights__input" type="checkbox" name="sights" id="park" checked>
+          <label class="sights__label" for="park">Слайд-парк</label>
+          <input class="sights__input" type="checkbox" name="sights" id="rocks">
+          <label class="sights__label" for="rocks">Красные скалы</label>
         </fieldset>
+
+        <fieldset class="review-form__description description">
+          <legend class="description__legend">Опишите свои эмоции:</legend>
+          <textarea class="description__textarea" rows="3" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <input class="description__input" type="submit" value="Отправить отзыв">
       </form>
-
-      <fieldset>
-        <legend>Отправка отзыва</legend>
-        <input type="submit" value="Отправить отзыв">
-      </fieldset>
-
     </section>
   </main>
 
