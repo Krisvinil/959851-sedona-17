@@ -1,9 +1,32 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  background-color: #81b3d2;
+}
+
+.page-header__background {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
 .main-nav {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #81b3d2;
   font-size: 18px;
   text-transform: uppercase;
   color: #ffffff;
   line-height: 40px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .main-nav__list {
@@ -13,15 +36,4 @@
 .site-list__link {
   text-decoration: none;
   color: #ffffff;
-}
-
-.page-header__logo-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.page-header__background {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  height: 390px;
 }
