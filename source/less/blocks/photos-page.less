@@ -1,6 +1,19 @@
 .photos-page {
   font-size: 14px;
   line-height: 24px;
+  min-width: 320px;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
 }
 
 .photos__title {
@@ -10,11 +23,21 @@
 }
 
 .photos__description {
+  text-align: center;
   color: #7d7d7d;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.photos__list {
+  padding: 0;
+  margin: 0;
 }
 
 .photos__items {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .photos-examples__author {

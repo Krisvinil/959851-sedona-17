@@ -15,13 +15,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Форма отзыва</a>
+            <a class="site-list__link" >Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
@@ -29,14 +29,17 @@
         </ul>
       </div>
     </nav>
-    <div class='page-header__background' >
-          <a class='page-header__logo' >
-      <img class='page-header__logo-image' src="img/logo-sedona-desktop.svg" alt="Логотип Седона">
-    </a>
-    </div>
+    <section class='page-header_logo-section'>
+      <a class='page-header__logo' href="index.html">
+        <img class='page-header__logo-image' src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+      </a>
+    </section>
   </header>
 
   <main class="main-review">
+    <section class='main-page__background'>
+      <img class='main-page__textsedona-image' src="img/text-sedona-index.svg" width="280" height="207" alt="Приглашение в  Седону">
+    </section>
     <section class="review">
       <h1 class="review-title">Оставьте свой отзыв</h1>
       <p class="review-item">Помогите нашим отелям стать лучше!
@@ -46,18 +49,18 @@
         <fieldset class="review-form__username username">
           <legend class="username__legend">Представьтесь:</legend>
           <label class="username__name" for="user-name">Имя*:</label>
-          <input class="username__inputname" type="text" name="username" id="user-name" placeholder="Петр">
+          <input class="username__inputname inputname inputname__username" type="text" name="username" id="user-name" placeholder="Петр" required autofocus>
           <label class="username__surname" for="user-surname">Фамилия*:</label>
-          <input class="username__inputsurname" type="text" name="usersurname" id="user-surname" placeholder="Иванов">
+          <input class="username__inputsurname inputname inputname__inputsurname" type="text" name="usersurname" id="user-surname" placeholder="Иванов" required>
           <label class="username__patronymic" for="user-patronymic">Отчество:</label>
-          <input class="username__inputsurpatronymic" type="text" name="userpatronymic" id="user-patronymic" placeholder="Александрович">
+          <input class="username__inputsurpatronymic inputname inputname__inputsurpatronymic" type="text" name="userpatronymic" id="user-patronymic" placeholder="Александрович">
         </fieldset>
         <fieldset class="review-form__contact contact">
           <legend class="contact__legend">Контактная информация:</legend>
-          <label class="contact__phone" for="user-phone">Контактный телефон*:</label>
-          <input class="contact__inputphone" type="text" name="userphone" id="user-phone" placeholder="Введите телефон">
+          <label class="contact__phone" for="tel">Контактный телефон*:</label>
+          <input class="contact__inputphone inputphone inputphone__contact" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" id="tel" placeholder="Введите телефон" required>
           <label class="contact__mail" for="user-mail">Электронная почта*:</label>
-          <input class="contact__inputmail" type="text" name="usersmail" id="user-mail" placeholder="Введите e-mail">
+          <input class="contact__inputmail inputmail inputmail__contact" type="email" name="usersmail" id="user-mail" placeholder="Введите e-mail" required>
         </fieldset>
 
         <fieldset class="review-form__impression impression">
@@ -72,19 +75,19 @@
 
         <fieldset class="review-form__sights sights">
           <legend class="sights__legend">Посещенные достропримечательности:</legend>
-          <input class="sights__input" type="checkbox" name="sights" id="bridge" checked>
-          <label class="sights__label" for="bridge">Мост Дьявола</label>
-          <input class="sights__input" type="checkbox" name="sights" id="mountain" checked>
+          <input class="sights__input input__sights" type="checkbox" name="sights" id="bridge" checked>
+          <label class="sights__label " for="bridge">Мост Дьявола</label>
+          <input class="sights__input input__sights" type="checkbox" name="sights" id="mountain" checked>
           <label class="sights__label" for="mountain">Гора-Колокол</label>
-          <input class="sights__input" type="checkbox" name="sights" id="park" checked>
+          <input class="sights__input input__sights" type="checkbox" name="sights" id="park" checked>
           <label class="sights__label" for="park">Слайд-парк</label>
-          <input class="sights__input" type="checkbox" name="sights" id="rocks">
+          <input class="sights__input input__sights" type="checkbox" name="sights" id="rocks">
           <label class="sights__label" for="rocks">Красные скалы</label>
         </fieldset>
 
         <fieldset class="review-form__description description">
           <legend class="description__legend">Опишите свои эмоции:</legend>
-          <textarea class="description__textarea" rows="3" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="description__textarea" rows="6" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <input class="review-form__submit" type="submit" value="Отправить отзыв">
       </form>
