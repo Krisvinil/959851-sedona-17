@@ -31,3 +31,41 @@
   padding-right: 20px;
   padding-bottom: 39px;
 }
+
+@media (min-width: @tablet-width) {
+  .videocontent {
+    max-width: @tablet-width;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .videocontent__item {
+    max-width: @tablet-width;
+    padding: 0;
+    margin: 0;
+  }
+
+  .videocontent__video {
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .videocontent {
+    max-width: @desktop-width;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .videocontent__item {
+    max-width: @desktop-width;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .videocontent__video {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
