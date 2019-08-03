@@ -281,7 +281,106 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
-  justify-content: center;
-  margin: 0 auto;
+  margin: auto;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    max-width: @tablet-width;
+  }
+
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+  }
+
+  .review-form__username {
+    width: 324px;
+  }
+
+  .review-form__impression {
+    width: 324px;
+  }
+
+  .review-form__contact {
+    width: @tablet-width;
+  }
+
+  .review-form__sights {
+    width: @tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .sights__label {
+    width: 324px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .review-form__description {
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .description__textarea {
+    width: 648px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .review-form__submit {
+    width: 324px;
+    margin-left: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    max-width: @desktop-width;
+  }
+
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .review-form__username {
+    width: 480px;
+  }
+
+  .review-form__impression {
+    width: 480px;
+  }
+
+  .review-form__contact {
+    width: @desktop-width;
+  }
+
+  .review-form__sights {
+    width: @desktop-width;
+  }
+
+  .review-form__description {
+    width: 960px;
+  }
+
+  .description__textarea {
+    width: 960px;
+  }
+
+  .review-form__submit {
+    width: 480px;
+  }
 }
