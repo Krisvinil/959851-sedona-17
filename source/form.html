@@ -44,9 +44,9 @@
     <section class="review">
       <h1 class="review-title">Оставьте свой отзыв</h1>
       <p class="review-item">Помогите нашим отелям стать лучше!
-        Оставьте отзыв о них, а также о посещенных вами достопримечательностях
-      </p>
+        Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form class="review-form">
+
         <fieldset class="review-form__username username">
           <legend class="username__legend">Представьтесь:</legend>
           <label class="username__name" for="user-name">Имя*:</label>
@@ -56,11 +56,11 @@
           <label class="username__patronymic" for="user-patronymic">Отчество:</label>
           <input class="username__inputsurpatronymic inputname inputname__inputsurpatronymic" type="text" name="userpatronymic" id="user-patronymic" placeholder="Александрович">
         </fieldset>
+
         <fieldset class="review-form__contact contact">
           <legend class="contact__legend">Контактная информация:</legend>
-          <label class="contact__phone" for="tel">Контактный телефон*:</label>
-          <input class="contact__inputphone inputphone inputphone__contact" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" id="tel" placeholder="Введите телефон" required>
-          <label class="contact__mail" for="user-mail">Электронная почта*:</label>
+          <label class="contact__phone" for="tel"> <input class="contact__inputphone inputphone inputphone__contact" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" id="tel" placeholder="Введите телефон" required>
+            <label class="contact__mail" for="user-mail">Электронная почта*:</label> Контактный телефон*:</label>
           <input class="contact__inputmail inputmail inputmail__contact" type="email" name="usersmail" id="user-mail" placeholder="Введите e-mail" required>
         </fieldset>
 
@@ -90,8 +90,14 @@
           <legend class="description__legend">Опишите свои эмоции:</legend>
           <textarea class="description__textarea" rows="6" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <input class="review-form__submit" type="submit" value="Отправить отзыв">
+
+
+
       </form>
+      <div class="review-form__sending">
+        <input class="review-form__submit" type="submit" value="Отправить отзыв">
+        <p class="review-form__required-fields">* — обязательные поля</p>
+      </div>
     </section>
   </main>
 
