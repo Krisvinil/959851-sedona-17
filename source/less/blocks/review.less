@@ -267,6 +267,12 @@
   margin: 0;
 }
 
+.review-form__sending {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+}
+
 .review-form__submit {
   display: block;
   font-weight: bold;
@@ -281,7 +287,201 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
-  justify-content: center;
-  margin: 0 auto;
+  margin: auto;
   padding: 0;
+}
+
+.review-form__required-fields {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    max-width: 648px;
+    margin: auto;
+    align-items: center;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .review-title {
+    padding: 0;
+    margin: 0;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .review-item {
+    padding: 0;
+    margin: 0;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .review-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+  }
+
+  .review-form__username {
+    width: 324px;
+  }
+
+  .review-form__contact {
+    width: 648px;
+  }
+
+  .review-form__sights {
+    width: 648px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .review-form__impression {
+    width: 324px;
+  }
+
+  .review-form__username:nth-of-type(1) {
+    order: 2;
+  }
+
+  .review-form__contact:nth-of-type(2) {
+    order: 3;
+  }
+
+  .review-form__impression:nth-of-type(3) {
+    order: 1;
+  }
+
+  .review-form__sights:nth-of-type(4) {
+    order: 4;
+  }
+
+  .review-form__description:nth-of-type(5) {
+    order: 5;
+  }
+
+  .sights__label {
+    width: 324px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .review-form__description {
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .description__textarea {
+    width: 648px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .review-form__sending {
+    width: 648px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .review-form__required-fields {
+    display: flex;
+    width: 196px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .review-form__submit {
+    width: 324px;
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 120px;
+  }
+
+
+  .review-title {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .review-item {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .review-form__username {
+    width: 480px;
+  }
+
+  .review-form__impression {
+    width: 480px;
+  }
+
+  .review-form__contact {
+    width: 960px;
+  }
+
+  .review-form__sights {
+    width: 960px;
+  }
+
+  .description__textarea {
+    width: 960px;
+  }
+
+  .sights__label {
+    width: 324px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .review-form__description {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .review-form__sending {
+    width: 960px;
+    justify-content: flex-start;
+  }
+
+  .review-form__required-fields {
+    display: inline-block;
+  }
+
+  .review-form__submit {
+    width: 480px;
+    padding: 0;
+    margin-left: 0;
+  }
 }
