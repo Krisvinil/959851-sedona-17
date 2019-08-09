@@ -10,12 +10,12 @@
 
 <body>
   <header class='page-header'>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"> Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
+            <a class="site-list__link site-list__item--active">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -31,7 +31,11 @@
     </nav>
     <section class='page-header_logo-section'>
       <a class='page-header__logo'>
-        <img class='page-header__logo-image' src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+        <picture class='page-header__logo-image'>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" type="image/svg+xml">
+          <source media="(min-width: 680px)" srcset="img/logo-sedona-tablet.svg" type="image/svg+xml">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+        </picture>
       </a>
     </section>
   </header>
@@ -46,11 +50,16 @@
       <p class="advantages__description">Раcсмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <ul class="advantages__list">
         <li class="advantages__items item-benefits item-benefits--blue">
-          <div class="item-benefits__wrapper" <h2 class="item-benefits__subtitle">Настоящий городок</h2>
+          <div class="item-benefits__wrapper">
+            <h2 class="item-benefits__subtitle">Настоящий городок</h2>
             <p class="item-benefits__number">-№1-</p>
             <p class="item-benefits__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="item-benefits__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Город Седона">
+          <picture class="item-benefits__img">
+            <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg" type="image/jpeg">
+            <source media="(min-width: 680px)" srcset="img/main-city-tablet@1x.jpg" type="image/jpeg">
+            <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Город Седона">
+          </picture>
           <ul class="item-benefits__list features">
             <li class="features__item  features__item--home">
               <h3 class="features__title">Жилье</h3>
@@ -58,14 +67,12 @@
                 Рекомендуем пожить в настоящем мотеле, все как в кино!
               </p>
             </li>
-
             <li class="features__item features__item--souvenirs">
               <h3 class="features__title">Сувениры</h3>
               <p class="features__description">
                 Не только китайского, но и местного производства!
               </p>
             </li>
-
             <li class="features__item features__item--food">
               <h3 class="features__title">Еда</h3>
               <p class="features__description">
@@ -80,32 +87,26 @@
             <p class="item-benefits__number">№2</p>
             <p class="item-benefits__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="item-benefits__img" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола в Седоне">
+          <picture class="item-benefits__img">
+            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg" type="image/jpeg">
+            <source media="(min-width: 680px)" srcset="img/main-bridge-tablet@1x.jpg" type="image/jpeg">
+            <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола в Седоне">
+          </picture>
         </li>
-
         <li class="advantages__items item-benefits item-benefits--grey">
-            <!-- <div class="item-benefits__wrapper"> -->
           <h2 class="item-benefits__subtitle">Небольшая площадь</h2>
           <p class="item-benefits__number">№3</p>
           <p class="item-benefits__description">Все интересные места находятся очень близко</p>
-<!--
-          </div> -->
         </li>
-
         <li class="advantages__items item-benefits item-benefits--grey">
-            <!-- <div class="item-benefits__wrapper"> -->
           <h2 class="item-benefits__subtitle">Красивая дорога</h2>
           <p class="item-benefits__number">№4</p>
           <p class="item-benefits__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          <!-- </div> -->
         </li>
-
         <li class="advantages__items item-benefits item-benefits--grey">
-            <!-- <div class="item-benefits__wrapper"> -->
           <h2 class="item-benefits__subtitle">Мало туристов</h2>
           <p class="item-benefits__number">№5</p>
           <p class="item-benefits__description">Большинство едет в Гранд Каньон и толпится там</p>
-            <!-- </div> -->
         </li>
       </ul>
     </section>
