@@ -39,9 +39,9 @@
   padding-bottom: 55px;
 }
 
-.photos-examples__img {
-  margin: 0;
-  padding: 0;
+.photos-examples__img img {
+  display: flex;
+  width: 100%;
 }
 
 .photos__list {
@@ -115,13 +115,16 @@
   }
 
   .photos-examples:first-child {
-    width: 648px;
+    width: 100%;
+    min-height: 400px;
   }
 
   .photos-examples:last-child {
-    margin: 0;
+    width: 324px;
   }
-
+  // .photos-examples:last-child img {
+  //   min-height: 267px;
+  // }
   .photos-examples:nth-child(2n+3) {
     background-color: #eaeaea;
   }
@@ -196,7 +199,6 @@
 
     .photos-examples__wrapper {
       position: absolute;
-
       background-color: rgba(0, 0, 0, 0.4);
       padding: 0;
       margin: -90px 0 0;
