@@ -1,7 +1,6 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  width: 320px;
   align-items: center;
   flex-direction: column;
 }
@@ -11,5 +10,11 @@
     position: relative;
     top: -55px;
     width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    top: -40px;
   }
 }
