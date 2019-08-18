@@ -10,15 +10,15 @@
 
 <body>
   <header class='page-header'>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"> Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link site-list__item--active">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">Фото и видео</a>
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Форма отзыва</a>
@@ -30,66 +30,83 @@
       </div>
     </nav>
     <section class='page-header_logo-section'>
-      <a class='page-header__logo' href="index.html">
-        <img class='page-header__logo-image' src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+      <a class='page-header__logo'>
+        <picture class='page-header__logo-image'>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" type="image/svg+xml">
+          <source media="(min-width: 680px)" srcset="img/logo-sedona-tablet.svg" type="image/svg+xml">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+        </picture>
       </a>
     </section>
   </header>
 
 
   <main class="photos-page">
-    <section class='main-page__background'>
-      <img class='main-page__textsedona-image' src="img/text-sedona-index.svg" width="280" height="207" alt="Приглашение в  Седону">
+    <section class='photos-page__background'>
+      <img class='photos-page__textsedona-image' src="img/text-sedona.svg" width="280" height="207" alt="Приглашение в  Седону">
     </section>
     <section class="photos">
       <h1 class="photos__title">Фото и видео</h1>
       <p class="photos__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
       <ul class="photos__list">
         <li class="photos__items photos-examples">
-          <img class="photos-examples__img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="281" alt="Неродные просторы">
+          <picture class="photos-examples__img">
+            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg" type="image/jpeg">
+            <source media="(min-width: 680px)" srcset="img/photo-sunset-tablet@1x.jpg" type="image/jpeg">
+            <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="281" alt="Неродные просторы">
+          </picture>
           <div class="photos-examples__wrapper">
-          <h2 class="photos-examples__title">Неродные просторы</h2>
-          <p class="photos-examples__author">Автор фото: Борис</p>
-          <p class="photos-examples__likes photos-examples__likes--thumbsup">1350</p>
-
+            <h2 class="photos-examples__title">Неродные просторы</h2>
+            <p class="photos-examples__author">Автор фото: Борис</p>
+            <p class="photos-examples__likes photos-examples__likes--thumbsup">1350</p>
           </div>
         </li>
-
         <li class="photos__items photos-examples">
-          <img class="photos-examples__img" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+          <picture class="photos-examples__img">
+            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg" type="image/jpeg">
+            <source media="(min-width: 680px)" srcset="img/photo-cactus-tablet@1x.jpg" type="image/jpeg">
+            <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="281" alt="Местная растительность">
+          </picture>
           <div class="photos-examples__wrapper">
-          <h2 class="photos-examples__title">Местная растительность</h2>
-          <p class="photos-examples__author">Автор фото: Сергей</p>
-          <p class="photos-examples__likes photos-examples__likes--thumbsup">143</p>
+            <h2 class="photos-examples__title">Местная растительность</h2>
+            <p class="photos-examples__author">Автор фото: Сергей</p>
+            <p class="photos-examples__likes photos-examples__likes--thumbsup">143</p>
           </div>
         </li>
-
         <li class="photos__items photos-examples">
-          <img class="photos-examples__img" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+          <picture class="photos-examples__img">
+            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg" type="image/jpeg">
+            <source media="(min-width: 680px)" srcset="img/photo-roads-tablet@1x.jpg" type="image/jpeg">
+            <img src="img/photo-roads-mobile@1x.jpg" width="280" height="281" alt="Дорога на север">
+          </picture>
           <div class="photos-examples__wrapper">
-          <h2 class="photos-examples__title">Дорога на север</h2>
-          <p class="photos-examples__author">Автор фото: Петр</p>
-          <p class="photos-examples__likes photos-examples__likes--thumbsup">96</p>
+            <h2 class="photos-examples__title">Дорога на север</h2>
+            <p class="photos-examples__author">Автор фото: Петр</p>
+            <p class="photos-examples__likes photos-examples__likes--thumbsup">96</p>
           </div>
         </li>
-
         <li class="photos__items photos-examples">
-          <img class="photos-examples__img" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+          <picture class="photos-examples__img">
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg" type="image/jpeg">
+            <source media="(min-width: 680px)" srcset="img/photo-bridge-tablet@1x.jpg" type="image/jpeg">
+            <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="281" alt="Мост дьявола">
+          </picture>
           <div class="photos-examples__wrapper">
-          <h2 class="photos-examples__title">Мост дьявола</h2>
-          <p class="photos-examples__author">Автор фото: Антон</p>
-          <p class="photos-examples__likes photos-examples__likes--thumbsup">254</p>
+            <h2 class="photos-examples__title">Мост дьявола</h2>
+            <p class="photos-examples__author">Автор фото: Антон</p>
+            <p class="photos-examples__likes photos-examples__likes--thumbsup">254</p>
           </div>
         </li>
       </ul>
     </section>
-
     <section class="videocontent">
-      <h2 class="videocontent__title">Все еще сомневаетесь:</h2>
+      <h2 class="videocontent__title">Все еще сомневаетесь?</h2>
       <p class="videocontent__item">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="videocontent__video" controls="controls" src="img/video-mobile@1x.jpg">
-        Your browser does not support the HTML5 Video element.
-      </video>
+      <picture class="videocontent__video">
+        <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg" type="image/jpeg">
+        <source media="(min-width: 680px)" srcset="img/video-tablet@1x.jpg" type="image/jpeg">
+        <img src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео">
+      </picture>
     </section>
   </main>
 

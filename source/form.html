@@ -11,37 +11,41 @@
 <body>
 
   <header class='page-header'>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"> Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link site-list__item--active">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link link link__site" href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
     <section class='page-header_logo-section'>
-      <a class='page-header__logo' href="index.html">
-        <img class='page-header__logo-image' src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+      <a class='page-header__logo'>
+        <picture class='page-header__logo-image'>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" type="image/svg+xml">
+          <source media="(min-width: 680px)" srcset="img/logo-sedona-tablet.svg" type="image/svg+xml">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+        </picture>
       </a>
     </section>
   </header>
 
   <main class="main-review">
-    <section class='main-page__background'>
-      <img class='main-page__textsedona-image' src="img/text-sedona-index.svg" width="280" height="207" alt="Приглашение в  Седону">
+    <section class='main-review__background'>
+      <img class='main-review__textsedona-image' src="img/text-sedona.svg" width="280" height="207" alt="Приглашение в  Седону">
     </section>
-    <section class="review">
+    <section class="main-review review">
       <h1 class="review-title">Оставьте свой отзыв</h1>
       <p class="review-item">Помогите нашим отелям стать лучше!
         Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -49,41 +53,30 @@
 
         <fieldset class="review-form__username username">
           <legend class="username__legend">Представьтесь:</legend>
-          <label class="username__name" for="user-name">Имя*:</label>
-          <input class="username__inputname inputname inputname__username" type="text" name="username" id="user-name" placeholder="Петр" required autofocus>
-          <label class="username__surname" for="user-surname">Фамилия*:</label>
-          <input class="username__inputsurname inputname inputname__inputsurname" type="text" name="usersurname" id="user-surname" placeholder="Иванов" required>
-          <label class="username__patronymic" for="user-patronymic">Отчество:</label>
-          <input class="username__inputsurpatronymic inputname inputname__inputsurpatronymic" type="text" name="userpatronymic" id="user-patronymic" placeholder="Александрович">
+          <label class="username__name" for="user-name">Имя*:<input class="username__inputname inputname inputname__username" type="text" name="username" id="user-name" placeholder="Петр" required autofocus></label>
+          <label class="username__surname" for="user-surname">Фамилия*:<input class="username__inputsurname inputname inputname__inputsurname" type="text" name="usersurname" id="user-surname" placeholder="Иванов" required></label>
+          <label class="username__patronymic" for="user-patronymic">Отчество:<input class="username__inputsurpatronymic inputname inputname__inputsurpatronymic" type="text" name="userpatronymic" id="user-patronymic" placeholder="Александрович"></label>
         </fieldset>
 
         <fieldset class="review-form__contact contact">
           <legend class="contact__legend">Контактная информация:</legend>
-          <label class="contact__phone" for="tel"> <input class="contact__inputphone inputphone inputphone__contact" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" id="tel" placeholder="Введите телефон" required>
-            <label class="contact__mail" for="user-mail">Электронная почта*:</label> Контактный телефон*:</label>
-          <input class="contact__inputmail inputmail inputmail__contact" type="email" name="usersmail" id="user-mail" placeholder="Введите e-mail" required>
+          <label class="contact__phone" for="tel">Контактный телефон*:<input class="contact__inputphone inputphone inputphone__contact" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" id="tel" placeholder="Введите телефон" required></label>
+          <label class="contact__mail" for="user-mail">Электронная почта*:<input class="contact__inputmail inputmail inputmail__contact" type="email" name="usersmail" id="user-mail" placeholder="Введите e-mail" required></label>
         </fieldset>
 
         <fieldset class="review-form__impression impression">
           <legend class="impression__legend">Ваше общее впечатление:</legend>
-          <input class="impression__input" type="radio" name="impression" id="positive" checked>
-          <label class="impression__label" for="positive">Скорее положительное</label>
-          <input class="impression__input" type="radio" name="impression" id="negative">
-          <label class="impression__label" for="negative">Скорее негативное</label>
-          <input class="impression__input" type="radio" name="impression" id="hardtoanswer">
-          <label class="impression__label" for="hardtoanswer">Затрудняюсь ответить</label>
+          <label class="impression__label" for="positive"><input class="impression__input" type="radio" name="impression" id="positive" checked>Скорее положительное</label>
+          <label class="impression__label" for="negative"><input class="impression__input" type="radio" name="impression" id="negative">Скорее негативное</label>
+          <label class="impression__label" for="hardtoanswer"><input class="impression__input" type="radio" name="impression" id="hardtoanswer">Затрудняюсь ответить</label>
         </fieldset>
 
         <fieldset class="review-form__sights sights">
           <legend class="sights__legend">Посещенные достропримечательности:</legend>
-          <input class="sights__input input__sights" type="checkbox" name="sights" id="bridge" checked>
-          <label class="sights__label " for="bridge">Мост Дьявола</label>
-          <input class="sights__input input__sights" type="checkbox" name="sights" id="mountain" checked>
-          <label class="sights__label" for="mountain">Гора-Колокол</label>
-          <input class="sights__input input__sights" type="checkbox" name="sights" id="park" checked>
-          <label class="sights__label" for="park">Слайд-парк</label>
-          <input class="sights__input input__sights" type="checkbox" name="sights" id="rocks">
-          <label class="sights__label" for="rocks">Красные скалы</label>
+          <label class="sights__label " for="bridge"> <input class="sights__input input__sights" type="checkbox" name="sights" id="bridge" checked>Мост Дьявола</label>
+          <label class="sights__label" for="mountain"><input class="sights__input input__sights" type="checkbox" name="sights" id="mountain" checked>Гора-Колокол</label>
+          <label class="sights__label" for="park"> <input class="sights__input input__sights" type="checkbox" name="sights" id="park" checked>Слайд-парк</label>
+          <label class="sights__label" for="rocks"><input class="sights__input input__sights" type="checkbox" name="sights" id="rocks">Красные скалы</label>
         </fieldset>
 
         <fieldset class="review-form__description description">
