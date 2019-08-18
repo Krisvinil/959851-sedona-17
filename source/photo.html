@@ -100,11 +100,13 @@
       </ul>
     </section>
     <section class="videocontent">
-      <h2 class="videocontent__title">Все еще сомневаетесь:</h2>
+      <h2 class="videocontent__title">Все еще сомневаетесь?</h2>
       <p class="videocontent__item">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="videocontent__video" controls="controls" src="img/video-mobile@1x.jpg">
-        Your browser does not support the HTML5 Video element.
-      </video>
+      <picture class="videocontent__video">
+        <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg" type="image/jpeg">
+        <source media="(min-width: 680px)" srcset="img/video-tablet@1x.jpg" type="image/jpeg">
+        <img src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео">
+      </picture>
     </section>
   </main>
 
