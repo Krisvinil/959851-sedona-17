@@ -15,7 +15,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__item--active">Главная</a>
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -62,7 +62,7 @@
 
             <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x,img/main-city-desktop@2x.jpg 2x" type="image/jpeg">
             <source media="(min-width: 680px)" srcset="img/main-city-tablet@1x.jpg 1x,img/main-city-tablet@2x.jpg 2x" type="image/jpeg">
-            <img src="img/main-city-mobile@1x.jpg 1x, img/main-city-mobile@2x.jpg 2x " width="320" height="260" alt="Город Седона">
+          <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@1x.jpg 1x, img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Город Седона">
           </picture>
           <ul class="item-benefits__list features">
             <li class="features__item  features__item--home">
@@ -91,6 +91,11 @@
             <p class="item-benefits__description item-benefits__description--secondchild">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <picture class="item-benefits__img">
+
+
+
+
+
             <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg" type="image/jpeg">
             <source media="(min-width: 680px)" srcset="img/main-bridge-tablet@1x.jpg" type="image/jpeg">
             <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола в Седоне">
@@ -122,11 +127,11 @@
     <section class="map map_external">
       <h2 class="visually-hidden">Расположение города Седоны на карте</h2>
       <iframe class="map__Iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sru!4v1563223612136!5m2!1sen!2sru"
-        width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        width="600" height="350"  style="border:0" allowfullscreen></iframe>
     </section>
   </main>
 
-  <footer class="main-footer footer-main">
+  <footer class="main-footer main-footer__footer">
     <div class="main-footer__hashtag hashtag">
       <p class="hashtag__name">
         #Visitsedona
@@ -161,7 +166,7 @@
     </div>
 
     <div class="main-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
+      <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span>
         <svg class="copyright__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
           xml:space="preserve">
