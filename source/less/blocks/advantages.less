@@ -40,6 +40,11 @@
   margin: 0;
   padding: 0;
   margin-top: -36px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .advantages__list {
@@ -234,13 +239,18 @@
   }
 
   .main-page__background {
-    background-image: url(" ../img/bg-intro-triangle-tablet.svg"), url(" ../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     margin: 0;
     padding: 0;
     margin-top: -80px;
     height: 518px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .main-page__textsedona-image {
@@ -379,13 +389,18 @@
 
 @media (min-width: @desktop-width) {
   .main-page__background {
-    background-image: url(" ../img/bg-intro-triangle-desktop.svg"), url(" ../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     margin: 0;
     padding: 0;
     height: 520px;
     margin-top: -150px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .main-page__textsedona-image {

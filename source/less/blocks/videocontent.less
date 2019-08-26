@@ -68,7 +68,6 @@
 }
 
 .videocontent__slider::-webkit-slider-thumb {
-
   appearance: none;
   width: 9px;
   height: 9px;
@@ -92,6 +91,14 @@
   padding-top: 22px;
   vertical-align: middle;
   align-items: center;
+
+  &:hover {
+    // color: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .videocontent__subtitle {
@@ -99,6 +106,10 @@
   padding-top: 22px;
   vertical-align: middle;
   align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .videocontent__fullscreen {
@@ -106,9 +117,11 @@
   padding-top: 22px;
   vertical-align: middle;
   align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
-
-
 
 @media (min-width: @tablet-width) {
   .videocontent {

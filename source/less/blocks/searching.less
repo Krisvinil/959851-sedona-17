@@ -41,8 +41,20 @@
   border: none;
   cursor: pointer;
   justify-content: center;
-}
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: #88b6d1;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .searching__item {
