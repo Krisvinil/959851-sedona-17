@@ -27,6 +27,11 @@
   margin: 0;
   padding: 0;
   margin-top: -36px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .photos-page__textsedona-image {
@@ -116,15 +121,6 @@
   opacity: 0.4;
   margin-bottom: 24px;
 }
-// .photos__items::before {
-//   content: "";
-//   position: absolute;
-//   border-color: #009933;
-//   border-style: solid;
-//   transform: rotate(180deg);
-//   width: 320px;
-// }
-//
 
 .photos__items:nth-child(1) {
   margin-top: 20px;
@@ -140,6 +136,12 @@
 
 .photos__items:nth-child(4) {
   margin-top: 20px;
+}
+
+.photos-examples__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 @media (min-width: @tablet-width) {
@@ -162,6 +164,11 @@
     background-image: url(" ../img/bg-intro-triangle-tablet.svg"), url(" ../img/bg-back-tablet@1x.jpg");
     height: 290px;
     margin-top: -89px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .photos-page__textsedona-image {
@@ -239,17 +246,24 @@
   }
 
   .photos-examples__likes--thumbsup {
-    background-image: url("../img/icon-like min.svg");
-    position: relative;
-    background-repeat: no-repeat;
     opacity: 1;
-    top: -41px;
-    left: 563px;
   }
 
   .photos-examples__likes {
     padding-left: 32px;
     padding-top: 2px;
+  }
+
+  .features__item:nth-of-type(1) {
+    order: 1;
+  }
+
+  .features__item:nth-of-type(2) {
+    order: 3;
+  }
+
+  .features__item:nth-of-type(3) {
+    order: 2;
   }
 }
 
@@ -276,7 +290,11 @@
   .photos-page__background {
     background-image: url(" ../img/bg-intro-triangle-desktop.svg"), url(" ../img/bg-back-desktop@1x.jpg");
     height: 301px;
-    // margin-top: -89px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .photos {
@@ -339,7 +357,6 @@
 
   .photos-examples__likes--thumbsup {
     color: #ffffff;
-    left: 315px;
   }
 
   .photos-examples__img img {
