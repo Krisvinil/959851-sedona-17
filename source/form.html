@@ -10,7 +10,7 @@
 
 <body>
 
-  <header class='page-header'>
+  <header class="page-header">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"> Открыть меню</button>
       <div class="main-nav__wrapper">
@@ -30,9 +30,9 @@
         </ul>
       </div>
     </nav>
-    <section class='page-header_logo-section'>
-      <a class='page-header__logo'>
-        <picture class='page-header__logo-image'>
+    <section class="page-header_logo-section">
+      <a class="page-header__logo">
+        <picture class="page-header__logo-image">
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" type="image/svg+xml">
           <source media="(min-width: 680px)" srcset="img/logo-sedona-tablet.svg" type="image/svg+xml">
           <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
@@ -42,8 +42,8 @@
   </header>
 
   <main class="main-review">
-    <section class='main-review__background'>
-      <img class='main-review__textsedona-image' src="img/text-sedona.svg" width="280" height="207" alt="Приглашение в  Седону">
+    <section class="main-review__background">
+      <img class="main-review__textsedona-image" src="img/text-sedona.svg" width="280" height="207" alt="Приглашение в  Седону">
     </section>
     <section class="main-review review">
       <h1 class="review-title">Оставьте свой отзыв</h1>
@@ -53,45 +53,45 @@
 
         <fieldset class="review-form__username username">
           <legend class="username__legend">Представьтесь:</legend>
-          <label class="username__name" for="user-name">Имя*:<input class="username__inputname inputname inputname__username" type="text" name="username" id="user-name" placeholder="Петр" required></label>
-          <label class="username__surname" for="user-surname">Фамилия*:<input class="username__inputsurname inputname inputname__inputsurname" type="text" name="usersurname" id="user-surname" placeholder="Иванов" required></label>
+          <label class="username__name" for="user-name">Имя*:<input class="username__inputname inputname inputname__username" type="text" name="username" id="user-name" placeholder="Петр" required=""></label>
+          <label class="username__surname" for="user-surname">Фамилия*:<input class="username__inputsurname inputname inputname__inputsurname" type="text" name="usersurname" id="user-surname" placeholder="Иванов" required=""></label>
           <label class="username__patronymic" for="user-patronymic">Отчество:<input class="username__inputsurpatronymic inputname inputname__inputsurpatronymic" type="text" name="userpatronymic" id="user-patronymic" placeholder="Александрович"></label>
         </fieldset>
 
         <fieldset class="review-form__contact contact">
           <legend class="contact__legend">Контактная информация:</legend>
           <label class="contact__phone" for="tel">Контактный телефон*:
-            <input class="contact__inputphone inputphone inputphone__contact" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" id="tel" placeholder="Введите телефон" required>
+            <input class="contact__inputphone inputphone inputphone__contact" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" id="tel" placeholder="Введите телефон" required="">
             <svg class="inputphone__svg" x="0px" y="0px" width="18px" height="18px" viewBox="-20 -20 60 60">
               <g>
                 <g transform="translate(-85.000000, -126.000000)">
                   <g transform="translate(85.000000, 126.000000)">
-                    <path fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z" />
+                    <path fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"></path>
                   </g>
                 </g>
               </g>
             </svg>
           </label>
           <label class="contact__mail" for="user-mail">Электронная почта*:
-            <input class="contact__inputmail inputmail inputmail__contact" type="email" name="usersmail" id="user-mail" placeholder="Введите e-mail" required>
+            <input class="contact__inputmail inputmail inputmail__contact" type="email" name="usersmail" id="user-mail" placeholder="Введите e-mail" required="">
             <svg class="inputmail__svg" x="0px" y="0px" width="16px" height="16px" viewBox="-20 -20 60 60">
-              <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+              <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"></path>
             </svg>
           </label>
         </fieldset>
 
         <fieldset class="review-form__impression impression">
           <legend class="impression__legend">Ваше общее впечатление:</legend>
-          <label class="impression__label label label__impression" for="positive"><input class="impression__input input input__impression" type="radio" name="impression" id="positive" checked><span>Скорее положительное</span></label>
+          <label class="impression__label label label__impression" for="positive"><input class="impression__input input input__impression" type="radio" name="impression" id="positive" checked=""><span>Скорее положительное</span></label>
           <label class="impression__label label label__impression" for="negative"><input class="impression__input input input__impression" type="radio" name="impression" id="negative"><span>Скорее негативное</span></label>
           <label class="impression__label label label__impression" for="hardtoanswer"><input class="impression__input input input__impression" type="radio" name="impression" id="hardtoanswer"><span>Затрудняюсь ответить</span></label>
         </fieldset>
 
         <fieldset class="review-form__sights sights">
           <legend class="sights__legend">Посещенные достропримечательности:</legend>
-          <label class="sights__label" for="bridge"> <input class="sights__input input input__sights" type="checkbox" name="sights" id="bridge" checked><span>Мост Дьявола</span></label>
-          <label class="sights__label" for="mountain"><input class="sights__input input input__sights" type="checkbox" name="sights" id="mountain" checked>Гора-Колокол</label>
-          <label class="sights__label" for="park"> <input class="sights__input input input__sights" type="checkbox" name="sights" id="park" checked>Слайд-парк</label>
+          <label class="sights__label" for="bridge"> <input class="sights__input input input__sights" type="checkbox" name="sights" id="bridge" checked=""><span>Мост Дьявола</span></label>
+          <label class="sights__label" for="mountain"><input class="sights__input input input__sights" type="checkbox" name="sights" id="mountain" checked="">Гора-Колокол</label>
+          <label class="sights__label" for="park"> <input class="sights__input input input__sights" type="checkbox" name="sights" id="park" checked="">Слайд-парк</label>
           <label class="sights__label" for="rocks"><input class="sights__input input input__sights" type="checkbox" name="sights" id="rocks">Красные скалы</label>
         </fieldset>
 
@@ -120,22 +120,21 @@
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Twitter</span>
             <svg enable-background="new 0 0 17.5 14.663" version="1.0" viewBox="0 0 17.5 14.663" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" width="18" height="14">
-              <path d="m11.283 0.153c1.736-0.484 3.074 0.264 3.685 1.15 0.694-0.225 1.372-0.47 2.072-0.69-4e-3 0.841-0.538 1.478-0.883 1.728 0.704 0.165 1.343-0.481 1.343-0.481-0.175 0.977-1.035 1.746-1.611 1.977-0.239 6.592-3.272 10.956-10.382 10.823h-0.46c-0.422 0-4.29-0.45-5.047-1.843 2.341 0.192 4.011-0.412 4.835-1.15-0.989-0.293-2.761-0.464-3.07-2.881 0.362 0.105 0.583 0.223 1.228 0.117-1.236-0.836-2.608-1.537-2.532-3.685 0.294 0.319 1.1 0.523 1.381 0.461-0.725-0.235-2.03-3.281-0.921-4.836 1.873 1.812 3.848 3.521 7.369 3.685 0.216-2.24 1.171-3.74 2.993-4.375z"
-                clip-rule="evenodd" fill-rule="evenodd" fill="#ffffff" />
+              <path d="m11.283 0.153c1.736-0.484 3.074 0.264 3.685 1.15 0.694-0.225 1.372-0.47 2.072-0.69-4e-3 0.841-0.538 1.478-0.883 1.728 0.704 0.165 1.343-0.481 1.343-0.481-0.175 0.977-1.035 1.746-1.611 1.977-0.239 6.592-3.272 10.956-10.382 10.823h-0.46c-0.422 0-4.29-0.45-5.047-1.843 2.341 0.192 4.011-0.412 4.835-1.15-0.989-0.293-2.761-0.464-3.07-2.881 0.362 0.105 0.583 0.223 1.228 0.117-1.236-0.836-2.608-1.537-2.532-3.685 0.294 0.319 1.1 0.523 1.381 0.461-0.725-0.235-2.03-3.281-0.921-4.836 1.873 1.812 3.848 3.521 7.369 3.685 0.216-2.24 1.171-3.74 2.993-4.375z" clip-rule="evenodd" fill-rule="evenodd" fill="#ffffff"></path>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Facebook</span>
             <svg enable-background="new 0 0 8.672 18.944" version="1.0" viewBox="0 0 8.672 18.944" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" width="9" height="18">
-              <path d="m6.275 3.356h2.398v-3.356h-2.878c-3.139 0.181-4.255 2.387-3.847 6.114h-1.948v3.518h1.959v9.312h3.837v-9.312h2.857v-3.518h-2.866c-0.022-1.045-0.037-2.405 0.488-2.758z" fill="#ffffff" />
+              <path d="m6.275 3.356h2.398v-3.356h-2.878c-3.139 0.181-4.255 2.387-3.847 6.114h-1.948v3.518h1.959v9.312h3.837v-9.312h2.857v-3.518h-2.866c-0.022-1.045-0.037-2.405 0.488-2.758z" fill="#ffffff"></path>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы в ютубе</span>
             <svg enable-background="new 0 0 19.979 14.015" version="1.0" viewBox="0 0 19.979 14.015" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" width="20" height="14">
-              <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" fill="#ffffff" />
+              <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" fill="#ffffff"></path>
             </svg>
           </a>
         </li>
@@ -146,8 +145,7 @@
       <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span>
         <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="27" height="34">
-          <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"
-            fill="#000000" />
+          <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" fill="#000000"></path>
         </svg>
       </a>
     </div>
