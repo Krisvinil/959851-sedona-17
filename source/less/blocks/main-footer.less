@@ -46,7 +46,6 @@
   margin-right: 0;
 }
 
-
 .copyright__text {
   font-size: 14px;
   font-weight: normal;
@@ -60,17 +59,17 @@
   padding-bottom: 23px;
 }
 
-// .copyright__link:hover svg {
-//
-// }
-
-.copyright__link:active svg {
-  opacity: 0.3;
-}
-
-.copyright__link-icon {
+.copyright__link-icon path {
   width: 27px;
   height: 34px;
+}
+
+.copyright__link-icon path:hover {
+  fill: #81b3d2;
+}
+
+.copyright__link-icon path:active {
+  fill: #b2b2b2;
 }
 
 @media (min-width: @tablet-width) {
@@ -103,6 +102,16 @@
     min-width: 196px;
     height: 48px;
   }
+
+  .copyright__link-icon {
+    &:hover {
+      fill: #81b3d2;
+    }
+
+    &:active {
+      fill: #b2b2b2;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -117,5 +126,15 @@
   .main-footer__footer {
     margin-top: 32px;
     margin-bottom: 36px;
+  }
+
+  .copyright__link-icon {
+    &:hover {
+      fill: #81b3d2;
+    }
+
+    &:active {
+      fill: #b2b2b2;
+    }
   }
 }
